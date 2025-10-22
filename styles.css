@@ -1,0 +1,190 @@
+body {
+    background-color: #2F103B;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-slogan{
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.game-card {
+    display: flex;
+    background: #5f28769e;
+    color: white;
+    border-radius: 15px;
+    width: 500px;
+    height: 280px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+
+.p-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.p-icons img {
+    width: 20px;
+}
+
+
+.game-image img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.game-info {
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+
+.rating-star {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+
+.genre {
+    font-size: 0.9rem;
+    color: aqua;
+}
+
+
+.title {
+    font-size: 1.8rem;
+    margin: -5px 0;
+    background: linear-gradient(to left, aqua, rgb(255, 103, 255));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.part-1 {
+    margin-top: 10px;
+}
+
+
+.rating {
+    font-size: 0.6rem;
+    font-weight: lighter;
+}
+
+
+.stars img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.platforms {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+
+.play-btn {
+    background: linear-gradient(to right, #00D9FF, #AF27E9);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(142, 45, 226, 0.6);
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+
+.play-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(142, 45, 226, 1);
+}
+
+
+@media (max-width: 600px) {
+.game-card {
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+.game-image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+
+.part-1{
+    margin-top: -10px;
+}
+
+
+.game-info {
+    margin-top: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+.platforms, .p-icons {
+    text-align: center;
+    width: 100%;
+}
+
+
+.platforms{
+    margin-top: -10px;
+}
+
+
+.p-icons{
+    margin-top: 7px;
+}
+
+
+.play-btn {
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+    }
+}
