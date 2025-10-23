@@ -2,7 +2,7 @@
 
 
 body {
-    /* background-color: #2F103B; */
+    background-color: #2F103B;
     font-family: "space grostek", sans-serif;
     font-size: 10px;
     margin: 0;
@@ -159,7 +159,6 @@ body {
     height: 500px;
     max-width: 350px;
     min-width: 250px;
-    margin: 0 10px;
     margin: 0 auto;
 }
 
@@ -283,7 +282,7 @@ a{
     color: #D4D4D4;
 }
 
-a:hover{
+.f-items a:hover{
     color: yellow;
 }
 
@@ -301,4 +300,102 @@ a:hover{
 
 .f-logo h5{
     margin: 0 5px;
+}
+
+
+/* -------------------------------------------------------
+                        Teams
+------------------------------------------------------- */
+#teams{
+    background-color: #121212;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.m-bottom-30{
+    margin-bottom: 30px;
+}
+
+
+.fs-xl{
+    font-size: x-large;
+}
+
+.fs-s{
+    font-size: small;
+}
+
+.m-top-10{
+    margin-top: 10px;
+}
+
+
+.m-top-30{
+    margin-top: 30px;
+}
+
+
+.team-card{
+    background-color: #262626;
+    width: 300px;
+    height: 420px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.team-icon{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+}
+
+
+.team-icon img{
+    width: 20px;
+}
+
+
+.btn-m{
+    border-radius: 12px;
+    padding: 10px 80px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #FF8C00;
+    box-shadow: 0 0 15px #d17300;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.btn-m:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(255, 140, 0);
+    color: white;
+}
+
+.t-cards{
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+.t-image img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.t-footer{
+    background-color: #262626;
 }
