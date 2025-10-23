@@ -203,13 +203,24 @@ body {
     margin-top: 7px;
 }
 
-
 .play-btn {
     align-self: center;
     width: 100%;
     max-width: 200px;
     }
+
+.main-f-cpntainer{
+    flex-direction: column;
 }
+.p-footer{
+    width: 390px;
+}
+.social-icons{
+    display: flex;
+    gap: 0px;
+}
+}
+
 
 
 /* -------------------------------------------------------------------------
@@ -269,7 +280,7 @@ ul h5{
 
 a{
     text-decoration: none;
-    color: rgb(225, 225, 225);
+    color: #D4D4D4;
 }
 
 a:hover{
@@ -284,7 +295,7 @@ a:hover{
 
 
 .sub-main-f-container{
-    width: 500px;
+    width: auto;
 }
 
 
