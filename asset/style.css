@@ -1,30 +1,366 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Stick&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metal+Mania&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Stick&display=swap");
+
 * {
-    font-family: "Space Grotesk", sans-serif;
-    color: #FFFFFF;
-    padding: 0;
-    margin: 0;
-    font-size: 10px;
-    
+  /* font-family: "Space Grotesk", sans-serif; */
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  text-decoration: none;
 }
-.primary__background{
-    background-image:linear-gradient(to right, #42224F 62%, #FFEE00);
+/* Background */
+.primary__background {
+  background-image: linear-gradient(to right, #42224f 62%, #ffee00);
 }
-.secondary__background{
-    background-color: #42224F;
+.secondary__background {
+  background-color: #42224f;
 }
+/************************ Mobile *************************/
+ @media (max-width: 970px) {
+  /* navigation */
+.header__logo-text {
+  font-family: stick, sans-serif;
+  font-size: 1.6rem;
+}
+.header__navBar {
+  display: flex;
+  background-color: #2b2b2b;
+  min-height: 15rem;
+  flex-direction: column;
+}
+.header__links {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 1rem;
+  align-self: center;
+}
+
+/* Ranking */
+.main__container {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.main__rank-title {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+#main__rank-container {
+  width: 100%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+.main__rank-place {
+  display: flex;
+  background-color: #dec6e6;
+  margin-top: 0.4rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__num-place,
+.main__info-name,
+.main__info-numWins,
+.main__info-score,
+.main__info-prize,
+.main__info-numlost {
+  color: #2b2b2b !important;
+}
+.main__info-country {
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: black;
+  opacity: 0.4;
+}
+.main__info-place {
+  display: flex;
+}
+/* Hero Section */
+#hero__title{
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.2rem;
+}
+.hero {
+  display: flex;
+  margin-top: 6.4rem;
+}
+.hero__box {
+  margin-left: 3.2rem;
+}
+#hero__subtitle--D4D4D4 {
+  font-size: 2.4rem;
+  color: #d4d4d4;
+  word-spacing: 0.2rem;
+}
+.hero__btn {
+  background-image: linear-gradient(to right, #ffee00, #998f00);
+  padding: 0.8rem 14rem;
+  margin-top: 6rem;
+  border: none;
+}
+.hero__img {
+  visibility: hidden;
+}
+ }
+/* ********************** Desktop *********************** */
+@media (min-width: 970px) and (max-width: 2000px) {
 /* Navigation */
-.header__logo-image--size{
-    width: 5.6rem;
-    height: 4rem;
+.header__link {
+  text-decoration: none;
 }
-.header__logo-text{
-    font-family: Stick;
-    font-size: 2.4rem;
+.header__logo-text {
+  font-family: stick, sans-serif;
+  font-size: 2.6rem;
+}
+.header__logo-text:hover{
+  color: #cd7f32;
+}
+.header__navBar {
+  display: flex;
+  background-color: #2b2b2b;
+  height: 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  font-size: 1.6rem;
+  padding: 1rem;
+  align-self: center;
+}
+.header__link:hover {
+  color: #fbff00;
+}
+.header__logo,
+.header__button {
+  display: flex;
+  margin: 0 3%;
+}
+/* Buttons */
+.header__link--2B2B2B {
+  color: #2b2b2b;
+}
+.header__button {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.header__button--gold {
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1.2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ffee00, #998f00);
+}
+.header__button--gray {
+  border: none;
+  border-radius: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #d4d4d4, #769d95);
+}
+.header__button--gold:hover {
+  background-image: linear-gradient(to right, #a70096, #006b86);
+}
+.header__button--gray:hover {
+  background-image: linear-gradient(to right, #0051ff, #009c75);
+}
+.header__link--2B2B2B:hover {
+  color: #fff;
+}
+/* Hero Section */
+#hero__title {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6.4rem;
+}
+.hero {
+  display: flex;
+  margin-top: 6.4rem;
+  justify-content: space-between;
+}
+.hero__box {
+  margin-left: 3.2rem;
+}
+#hero__subtitle--D4D4D4 {
+  font-size: 3.2rem;
+  color: #d4d4d4;
+  line-height: 3.75rem;
+  word-spacing: 0.2rem;
+  max-width: 50rem;
+}
+.hero__btn {
+  background-image: linear-gradient(to right, #ffee00, #998f00);
+  padding: 0.8rem 14rem;
+  margin-top: 6rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+.hero__btn:hover {
+  transform: scale(1.05);
+}
+.hero__img {
+  width: 30rem;
+  height: 35rem;
+}
+/* CTA section */
+.cta__container {
+  margin-top: 10.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.3rem solid #ffc526;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00eaff;
+  max-width: 92rem;
+  height: 35rem;
+}
+.cta__title {
+  font-size: 6.4rem;
+  font-weight: 500;
+  margin-left: 10%;
+  margin-top: 6%;
+}
+.cta__subtitle {
+  margin-left: 10%;
+  margin-top: 0.8%;
+  font-size: 1.6rem;
+  width: 75%;
+  color: #d4d4d4;
+  line-height: 1.75rem;
+  word-spacing: 0.2rem;
+}
+.cta__btn {
+  background-image: linear-gradient(to right, #ffee00, #998f00);
+  padding: 0.8rem 7rem;
+  margin-top: 6rem;
+  margin-left: 10%;
+  margin-top: 6%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+.cta__btn:hover {
+  transform: scale(1.05);
+}
+/* Sponsor */
+.main {
+  margin-left: 6.4rem;
+  margin-right: 6.4rem;
+}
+.main__text {
+  margin-top: 3.2rem;
+}
+.main__title {
+  font-size: 3.2rem;
+}
+.main__subtitle {
+  font-size: 1.6rem;
+  color: #d4d4d4;
+  font-weight: 300;
+}
+.main__card {
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border: #fff solid 3.75px;
+  height: 12rem;
+}
+/* *** Diamond Card *** */
+.main__card--E11FFF {
+  border-color: #e11fff;
+}
+/* *** platuinm Card ***  */
+.main__card--1FADFF {
+  border-color: #1fadff;
+}
+/* *** Gold Card *** */
+.main__card--FFD700 {
+  border-color: #ffd700;
+}
+/* *** Iron Card ***  */
+.main__card--E5E4E2 {
+  border-color: #e5e4e2;
+}
+/* *** Branze Card *** */
+.main__card--CD7F32 {
+  border-color: #cd7f32;
 }
 
-
-/* Sponsor Page */
-.secondary__background{
-    background-color: #42224F;
+/* General info */
+.main__card--backgroun {
+  background-color: #27142e;
+  width: 23rem;
+  height: 12rem;
+}
+.main__card-image {
+  width: inherit;
+}
+.main__card-title {
+  font-size: 2.2rem;
+}
+.main__card-description {
+  font-size: 1.6rem;
+  color: #d4d4d4;
+}
+/* Sponsor button */
+.sponsor__button--orange {
+  background-image: linear-gradient(to right, #ffa94d 75%, #ffd5a8);
+  border-radius: 1.2rem;
+  padding: 1.5rem 1.1rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.sponsor__button--orange:hover {
+  transform: scale(1.05);
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #ffa94d;
+  border: #00eaff;
+}
+/* Ranking */
+.main__container {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.main__rank-title {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+#main__rank-container {
+  width: 100%;
+  margin-left: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+.main__rank-place {
+  display: flex;
+  background-color: #dec6e6;
+  margin-top: 0.4rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__num-place,
+.main__info-name,
+.main__info-numWins,
+.main__info-score,
+.main__info-prize,
+.main__info-numlost {
+  color: #2b2b2b !important;
+}
+.main__info-country {
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: black;
+  opacity: 0.4;
+}
+.main__info-place {
+  display: flex;
+}
 }
