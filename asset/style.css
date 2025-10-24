@@ -8,6 +8,32 @@
   font-size: 10px;
   text-decoration: none;
 }
+/* Rank images */
+.main__info-img{
+  width: 3.3rem;
+  height: 3.3rem;
+}
+/* Rank win lost color */
+#main__info-numWins{
+  color: #078400;
+}
+#main__info-numlost{
+  color: #A50000;
+}
+#main__num-place,
+#main__info-name,
+#main__info-prize,
+#main__info-score{
+  color: #42224f;
+}
+#main__info-country{
+  color: #000000;
+  opacity: .4;
+}
+/* Rank container */
+#main__rank-place{
+  background-color: #dec6e6;
+}
 /************************ Mobile *************************/
  @media (max-width: 970px) {
   /* Background */
@@ -90,7 +116,6 @@
 }
 .main__rank-place {
   display: flex;
-  background-color: #dec6e6;
   margin-top: 0.4rem;
   justify-content: space-around;
   align-items: center;
@@ -111,6 +136,76 @@
 }
 .main__info-place {
   display: flex;
+}
+/* Sponsor */
+.main {
+  margin-left: 3rem;
+  margin-right: 3em;
+}
+.main__text {
+  margin-top: 0.8rem;
+}
+.main__title {
+  font-size: 3.2rem;
+}
+.main__subtitle {
+  font-size: 1.6rem;
+  color: #d4d4d4;
+  font-weight: 300;
+}
+.main__card {
+  margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border: #fff solid 3.75px;
+  height: 12rem;
+  overflow: hidden;
+}
+/* *** Diamond Card *** */
+.main__card--E11FFF {
+  border-color: #e11fff;
+}
+/* *** platuinm Card ***  */
+.main__card--1FADFF {
+  border-color: #1fadff;
+}
+/* *** Gold Card *** */
+.main__card--FFD700 {
+  border-color: #ffd700;
+}
+/* *** Iron Card ***  */
+.main__card--E5E4E2 {
+  border-color: #e5e4e2;
+}
+/* *** Branze Card *** */
+.main__card--CD7F32 {
+  border-color: #cd7f32;
+}
+
+/* General info */
+.main__card--backgroun {
+  background-color: #27142e;
+  width: 23rem;
+  height: 12rem;
+}
+.main__card-image {
+  width: inherit;
+}
+.main__card-title {
+  font-size: 2.2rem;
+}
+.main__card-description {
+  font-size: 1.6rem;
+  color: #d4d4d4;
+}
+/* Sponsor button */
+.sponsor__button--orange {
+  background-image: linear-gradient(to right, #ffa94d 75%, #ffd5a8);
+  border-radius: 1.2rem;
+  padding: 1.5rem 1.1rem;
+  margin-top: 1.2rem;
+  width: 100%;
 }
 /* Hero Section */
 #hero__title{
@@ -436,4 +531,85 @@
 .main__info-place {
   display: flex;
 }
+}
+/* -------------------------------------------------------------------------
+                                Footer
+------------------------------------------------------------------------- */
+footer{
+    margin-top: 104px;
+    background-color: #43075c;
+}
+
+.main-f-cpntainer{
+    display: flex;
+    font-size: 1.6em;
+    margin: auto;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.f-logo{
+    display: flex;
+    font-size: 50px;
+    font-family: stick, sans-serif;
+    margin-bottom: 0;
+    
+}
+.f-logo img{
+    width: 60px;
+}
+
+
+ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+ul{
+    margin-bottom: 5px;
+}
+
+.f-items{
+    display: flex;
+    flex-direction: column;
+    font-weight: light;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+.f-items a:hover{
+    color: yellow;
+}
+
+.social-icons{
+    margin: 0 30px 0 0;
+    
+}
+
+
+.sub-main-f-container{
+    width: auto;
+
+}
+
+
+.f-logo h5{
+    margin: 0 5px;
+}
+
+.f-items li:first-child {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
