@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metal+Mania&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Stick&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    color: #42224F;
+    font-family: "Space grotesk", sans-serif;
+}
+#dash-board{
+    background-color: #ffffff;
+    display: flex;
+    font-size: 16px;
+}
+.logOut--red{
+    background-color: #FF4D4D;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid white 3px;
+    flex-shrink: 0;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.menu{
+    background-color: #42224F;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+#menu__item{
+    color: white;
+}
+.menu:hover{
+    width: 260px;
+}
+
+
+ul{
+    list-style: none;
+    position: relative;
+    height: 90%;
+
+}
+
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    /* background-color: red; */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+
+
+ul li a:hover, .active, .data-info .box:hover, td:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+ul li a i{
+    font-size: 30px;
+}
+
+.content{
+    width: 100%;
+    margin: 10px;
+}
+
+.title-info{
+    /* background-color: #FF8C00; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box{
+    background-color: #F2F2F2;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.data-info .box i{
+    font-size: 20px;
+}
+
+.data-info .box .data{
+    font-size: 20px;
+}
+
+.data-info .box .data span{
+    font-size: 30px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td, th{
+    background-color: #F2F2F2;
+    height: 40px;
+    border-radius: 8px;
+}
+
+
+th{
+    background-color: #E4D1EB;
+}
+
+
+.price-won, .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/* .price-won{
+    background-color: green;
+} */
+
+/* .count{
+    background-color: gold;
+    color: black;
+} */

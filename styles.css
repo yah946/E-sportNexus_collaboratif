@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&family=Stick&display=swap');
+
+
+* {
+    font-family: "space grostek", sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 20px;
+    /* color: white; */
+    padding: 0;
+}
+body{
+        background-color: #2F103B;
+
+}
+.main-slogan{
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+
+.flex-c{
+    flex-direction: column;
+}
+
+
+.justify-center{
+    justify-content: center;
+}
+
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.game-card {
+    display: flex;
+    background: #5f28769e;
+    color: white;
+    border-radius: 15px;
+    width: 500px;
+    height: 280px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+
+.p-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.p-icons img {
+    width: 20px;
+}
+
+
+.game-image img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.game-info {
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+
+.rating-star {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+
+.genre {
+    font-size: 0.9rem;
+    color: aqua;
+}
+
+
+.title {
+    font-size: 1.8rem;
+    margin: -5px 0;
+    background: linear-gradient(to left, aqua, rgb(255, 103, 255));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.part-1 {
+    margin-top: 10px;
+}
+
+
+.rating {
+    font-size: 0.6rem;
+    font-weight: lighter;
+}
+
+
+.stars img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.platforms {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+
+.play-btn {
+    background: linear-gradient(to right, #00D9FF, #AF27E9);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(142, 45, 226, 0.6);
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+
+.play-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(142, 45, 226, 1);
+}
+
+
+@media (max-width: 1070px) {
+.game-card {
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    max-width: 350px;
+    min-width: 250px;
+    margin: 0 auto;
+}
+
+.main-container{
+    justify-content: space-evenly;
+}
+
+.game-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+
+.part-1{
+    margin-top: -10px;
+}
+
+
+.game-info {
+    margin-top: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+.platforms, .p-icons {
+    text-align: center;
+    width: 100%;
+}
+
+
+.platforms{
+    margin-top: -10px;
+}
+
+
+.p-icons{
+    margin-top: 7px;
+}
+
+.play-btn {
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+    }
+
+.main-f-cpntainer{
+    flex-direction: column;
+}
+
+/* .p-footer{
+    width: 350px;
+} */
+
+.f-logo{
+    font-size: medium;
+}
+}
+
+.social-icons img{
+    margin: 0 10px 0 0;
+}
+
+/* -------------------------------------------------------------------------
+                                Footer
+------------------------------------------------------------------------- */
+footer{
+    margin-top: 104px;
+    background-color: #43075c;
+}
+
+.main-f-cpntainer{
+    display: flex;
+    font-size: 1.6em;
+    margin: auto;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.f-logo{
+    display: flex;
+    font-size: 50px;
+    font-family: stick, sans-serif;
+    margin-bottom: 0;
+    
+}
+.f-logo img{
+    width: 60px;
+}
+
+
+ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+ul{
+    margin-bottom: 5px;
+}
+
+.f-items{
+    display: flex;
+    flex-direction: column;
+    font-weight: light;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+.f-items a:hover{
+    color: yellow;
+}
+
+.social-icons{
+    margin: 0 30px 0 0;
+    
+}
+
+
+.sub-main-f-container{
+    width: auto;
+
+}
+
+
+.f-logo h5{
+    margin: 0 5px;
+}
+
+.f-items li:first-child {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+/* -------------------------------------------------------
+                        Teams
+------------------------------------------------------- */
+#teams{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.m-bottom-30{
+    margin-bottom: 30px;
+}
+
+
+.fs-xl{
+    font-size: x-large;
+}
+
+.fs-s{
+    font-size: small;
+}
+
+.m-top-10{
+    margin-top: 10px;
+}
+
+
+.m-top-30{
+    margin-top: 30px;
+}
+
+
+.team-card{
+    background-color: #262626;
+    width: 300px;
+    height: 420px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px #FF8C00;
+}
+
+.team-icon{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+}
+
+
+.team-icon img{
+    width: 20px;
+}
+
+
+.btn-m{
+    border-radius: 12px;
+    padding: 10px 80px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #FF8C00;
+    box-shadow: 0 0 15px #d17300;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.btn-m:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(255, 140, 0);
+    color: white;
+}
+
+.t-cards{
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+.t-image img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.t-footer{
+    background-color: #121212;
+}
+
+.f-games{
+    color: white;
+}
+/* ------------------------------------------------------------------------------- */
+
+.ad-card{
+    width: 75%;
+    background-image: linear-gradient(to bottom , #774BA6, #2E1D40);
+    padding: 10% 3%;
+    text-align: center;
+    align-items: center;
+    margin-top: 104px;
+    border-radius: 16px;
+    gap: 20px;
+    box-shadow: 0 0 20px #774BA6;
+}
+
+#games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.btn-1{
+    max-width: 400px;
+    align-self: center;
+}
+
+.ad-card p{
+    width: 50%;
+    min-width: 300px;
+    
+}
+
+.ad-card h2{
+    font-weight: bold;
+}
+
+.t-color{
+    background-image: linear-gradient(135deg , #a15900, #3b2100);
+    box-shadow: 0 0 20px #F78800;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 10%;
+    line-height: 2rem;
+}
+
+.faq-container h4{
+    align-self: flex-start;
+    border-left: solid 5px #FF8C00;
+    font-size: x-large;
+    line-height: 1.5rem;
+}
+
+.faq-container p:not(.unique-p p) {
+    font-size: small;
+    border: #FF8C00 solid 1px;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #FF8C00;
+}
+
+.unique-p{
+    font-size: small;
+    border: #FF8C00 solid 1px;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #FF8C00;
+}
+.faq-container ul li{
+    list-style: circle;
+    margin: 0 0 1rem 0;
+}
+
+.privacy h3{
+    font-size: 1.3rem;
+    text-decoration: underline #FF8C00 5px;
+    
+}
+
+
+.faq-container h1{
+    font-size: 2rem;
+    color: #FF8C00;
+}
+
+.faq-b{
+    background-color: #2F103B;
+    color: white;
+}
